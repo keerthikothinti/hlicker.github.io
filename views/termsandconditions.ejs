@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body{
+    overflow: hidden;
+    background-image: url("https://img.freepik.com/free-vector/horizontal-abstract-pastel-color-hologram-background-design_29865-3305.jpg");
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+.container{
+  width: 700px;
+  border: 15px solid white;
+  padding: 50px;
+  margin: 20px;
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+ .container-content{
+   text-align: left;
+
+ }
+ .button {
+  background-color: rgb(81, 235, 81);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+} 
+ 
+ </style>
+<script>
+ function disableSubmit() {
+  document.getElementById("submit").disabled = true;
+ }
+
+  function activateButton(element) {
+
+      if(element.checked) {
+        document.getElementById("submit").disabled = false;
+       }
+       else  {
+        document.getElementById("button").disabled = true;
+      }
+
+  }
+</script>
+</head>
+
+<body onload="disableSubmit()">
+    <div class="container">
+        <div class="container-content">
+            <h1>Terms and contidions</h1>
+
+            <p><b> READ THESE TERMS AND CONDITIONS OF USE ("TERMS OF USE") CAREFULLY. BY ACCESSING OR USING THIS WEBSITE OR APPLICATION, PURCHASING PRODUCTS, OR THE SUBSCRIPTION SERVICES, YOU AGREE TO BE BOUND BY THESE TERMS OF USE.
+
+                Welcome to PICTURESQUE! picturesque.com (the "Site") provides our users with online tools designed to facilitate and share our love of photography and videos and to promote camaraderie. These Terms of Use protect the legal interests of Picturesque, our users and our third party vendors.
+                </b></p>
+              <ol>
+                <li>The Information you are giving must be original.</li>
+                <li>If the information that you have given was found fake / irrelevant your account will be permenantly deleted</li>
+                <li>If the images found duplicate it will be deleted </li>
+                <li>If anything found suspicious it will be take under consideration and serious issues may occur  </li>
+                <li>If the information given is illegal /  duplicate then it will be deleted </li>
+                <li>For more information <a href="https://www.termsfeed.com/live/60cb22fe-9c97-4dae-812a-139d969426dc">Terms & policy </a></li>
+              </ol>
+        </div>
+    <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">  I Agree Terms & Coditions
+<br><br>
+  <input type="submit" class="button" name="submit" id="submit" button onclick=" window.open('register','_self') ">
+  </div>
+</body>
+</html>

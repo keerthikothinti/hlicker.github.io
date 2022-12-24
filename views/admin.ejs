@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+</head>
+<style>
+body{
+        padding: auto;
+        background-image: url('https://wallpapercave.com/wp/wp2508415.jpg');
+
+    }
+button {
+  background-color: rgb(132, 249, 49);
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  position: center;
+  border-radius: 10cm;
+
+  }
+  
+  .container {
+  position: relative;
+  right: 0px;
+  left: 500px;
+  margin: 50px;
+  font-size: large;
+  max-width: 430px;
+  text-align: center;
+  padding: 15px;
+  border: solid 0.01cm black;
+  background: linear-gradient(rgba(161, 240, 236, 0.568),rgba(237, 230, 230, 0));
+}
+h1{
+   color: white;
+}
+.fa-home {
+            color: blanchedalmond;
+            font-size: 20px;
+            background: #000;
+            padding: 15px;
+            border-radius: 30px;
+        }
+
+        .card {
+            background-color: aliceblue;
+            box-shadow: 0 4px 8px 0 rgba(215, 176, 176, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            
+            border-radius: 30px;
+        }
+</style>
+<body>
+    <h1>
+        Admin Login Page
+    </h1>
+    <hr>
+    <div class="container">
+    <form action="/admin" method="POST">
+        <label for="username">UserName : </label>
+        <input type="text" placeholder="username" id="username" name="username"></br></br>
+        <label for="password">Password  : </label>
+        <input type="password" placeholder="password" id="password" name="password"></br></br>
+        <button>Admin Login</button>
+    </form></br>
+    
+    <a href="/"><i class="fa fa-home">Home</i></a>
+    </div>
+</body>
+</html>
